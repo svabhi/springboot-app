@@ -46,7 +46,7 @@ pipeline {
           steps {
             script {
                 withKubeConfig([credentialsId: 'K8S', serverUrl: 'https://aks-abhi-test-es-dns-12d44ec5.hcp.eastus.azmk8s.io']) {
-                sh ('kubectl apply -f  jenkins-aks-deploy-from-acr.yaml')
+                sh ('kubectl apply -f jenkins-aks-deploy-from-acr.yaml')
                 }
             }
         }
